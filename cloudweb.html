@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FHALL CLOUD STORE</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1500ff, #b30000);
+    color: white;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav button {
+    background: transparent;
+    border: none;
+    color: cyan;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    color: white;
+}
+
+#content {
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.box {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    padding: 20px;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 25px;
+    border: 1px solid cyan;
+}
+
+h2 {
+    color: cyan;
+}
+
+.wa-btn {
+    display: inline-block;
+    background: #25d366;
+    padding: 12px 22px;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+</style>
+
+<script>
+function show(section) {
+    let content = document.getElementById("content");
+
+    if (section === "hosting") {
+        content.innerHTML = `
+            <div class='box'>
+                <h2>Hosting Panel</h2>
+                <p>Anti lag, anti down, cocok untuk server RP / SMP.</p>
+                <p><b>1GB RAM – Rp 5.000</b></p>
+                <p><b>2GB RAM – Rp 10.000</b></p>
+                <p><b>3GB RAM – Rp 15.000</b></p>
+            </div>
+
+            <a class='wa-btn' href="https://wa.me/628978588670">Order via WhatsApp</a>
+        `;
+    }
+
+    if (section === "backup") {
+        content.innerHTML = `
+            <div class='box'>
+                <h2>Backup Server</h2>
+                <p><b>Backup RP Alrize – 15K</b></p>
+                <p><b>Backup LEG SMP – Coming Soon</b></p>
+            </div>
+
+            <a class='wa-btn' href="https://wa.me/628978588670">Order via WhatsApp</a>
+        `;
+    }
+
+    if (section === "joki") {
+        content.innerHTML = `
+            <div class='box'>
+                <h2>Joki Fish It</h2>
+
+                <h3>AFK Mancing (Jam)</h3>
+                <p>1 Jam – 1K</p>
+                <p>2 Jam – 2K</p>
+                <p>3 Jam – 3K</p>
+                <p>4 Jam – 4K</p>
+                <p>5 Jam – 5K</p>
+
+                <br>
+                <h3>Joki Harian</h3>
+                <p>1 Hari – 10K</p>
+                <p>2 Hari – 15K</p>
+                <p>3 Hari – 20K</p>
+                <p>4 Hari – 25K</p>
+                <p>5 Hari – 30K</p>
+
+                <br>
+                <h3>Joki Rod</h3>
+                <p>Astral Rod – 6K</p>
+                <p>Hazmat Rod – 8K</p>
+                <p>Agrasi Rod – 12K</p>
+                <p>Angler Rod – 20K</p>
+                <p>Bamboo Rod – 25K</p>
+            </div>
+
+            <a class='wa-btn' href="https://wa.me/628978588670">Order via WhatsApp</a>
+        `;
+    }
+
+    if (section === "support") {
+        content.innerHTML = `
+            <div class='box'>
+                <h2>Support & Contact</h2>
+                <p>Hubungi kami jika butuh bantuan atau ingin order.</p>
+                <h3>Payment:</h3>
+                <p>Gopay – 08978588670</p>
+                <p>Dana – 08978588670</p>
+                <p>QRIS – Available</p>
+            </div>
+
+            <a class='wa-btn' href="https://wa.me/628978588670">Chat WhatsApp</a>
+        `;
+    }
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+    <div class="logo">FHALL CLOUD</div>
+    <nav>
+        <button onclick="show('hosting')">Hosting</button>
+        <button onclick="show('backup')">Backup</button>
+        <button onclick="show('joki')">Joki</button>
+        <button onclick="show('support')">Support</button>
+    </nav>
+</header>
+
+<div id="content">
+    <h1>FHALL CLOUD STORE</h1>
+    <p>Joki • Backup • Hosting Termurah & Tercepat</p>
+</div>
+
+</body>
+</html>
